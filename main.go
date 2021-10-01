@@ -31,7 +31,7 @@ func main() {
 func (app *App) Init() {
 	app.ctx = context.Background()
 
-	opt := option.WithServiceAccountFile("C:/Users/Vicki/Downloads/serviceAccountKey.json")
+	opt := option.WithServiceAccountFile("C:/Users/Vicki/Downloads/serviceAccountKey.json") //ToDo: Replace with your path to service account key json file
 
 	firebaseApp, err := firebase.NewApp(app.ctx, nil, opt)
 	if err != nil {
@@ -69,7 +69,7 @@ func (app *App) UploadFile(w http.ResponseWriter, r *http.Request) {
 
 	fileName := strings.Join(strings.Fields(handler.Filename), "")
 
-	bucketName := "golang-8d2db.appspot.com"
+	bucketName := "your-bucket-url-goes-here" //ToDo: Replace with your bucket url
 
 	writer := app.storage.Bucket(bucketName).Object(fileName).NewWriter(app.ctx)
 	defer writer.Close()
