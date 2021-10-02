@@ -3,7 +3,7 @@
 
 <p align="center">
 <img  src="https://img.shields.io/badge/Go-29BEB0?style=for-the-badge&logo=go&logoColor=white">&nbsp;
-<img  src="https://img.shields.io/badge/-FIREBASE-FFCA28?logo=firebase&logoColor=white&style=for-the-badge">&nbsp;
+<img  src="https://img.shields.io/badge/-FIREBASE-FFCA28?logo=firebase&style=for-the-badge&logoColor=white">&nbsp;
 </p>
  
  # go-firebase-storage -Work in progress🛠️
